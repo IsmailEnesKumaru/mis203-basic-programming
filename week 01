@@ -1,1 +1,10 @@
+name = input("Name: ")
+department = input("Department: ")
+age = input("Age: ")
+career_goal = input("Career Goal: ")
 
+print("\n--- Student Profile ---")
+print("Name:", name)
+print("Department:", department)
+print("Age:", age)
+print("Career Goal:", career_goal)
