@@ -2,7 +2,7 @@ name = input("Your name: ")
 id = input("Your ID: ")
 dep = input("Your department ")
 git = input("Your GitHUB Username: ")
-goal = input("Your programming goal ")
+goal = input("Your programming goal: ")
 
 print("---Student Introduction Card---")
 print(f"Student name : {name}")
