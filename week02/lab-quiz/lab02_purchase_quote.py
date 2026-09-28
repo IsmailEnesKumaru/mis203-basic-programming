@@ -2,7 +2,7 @@ item1 = input("First item name: ")
 quantity1 = int(input("Quantity: "))
 price1 = int(input("Unit Price: "))
 item2 = input("Second item name: ")
-quantity2 = int(input("Quantity: "))
+quantity2 = int(input("Quantity: "))           #We must convert input before aritmethic because input takes numbers as a string.
 price2 = int(input("Unit Price: "))
 
 delivery=int(input("Delivery Fee: "))
