@@ -26,7 +26,7 @@ Result: Mehmet : 175.00 TRY (Student)
 Test 3 – Senior ticket
 Input: Name = Hakan, Age = 70, Day = weekday, Student = no
 Result: Hakan : 100.00 TRY (Senior)
-
+ 
 The order of the rules matter because if student rule comes before from child customer can't benefit from child discount and pays %10 more ticket price.
 
 
