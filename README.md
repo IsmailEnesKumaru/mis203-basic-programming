@@ -27,6 +27,6 @@ Test 3 – Senior ticket
 Input: Name = Hakan, Age = 70, Day = weekday, Student = no
 Result: Hakan : 100.00 TRY (Senior)
  
-The order of the rules matter because if student rule comes before from child customer can't benefit from child discount and pays %10 more ticket price.
+The order of the rules matter because pyhton checks the rules from top to bottom.If student rule comes before from child, customer can't benefit from child discount and pays %10 more ticket price.
 
 
