@@ -87,4 +87,4 @@ else:
     print(f"Average price: {total_price / total_tickets:.2f} TRY")
     print(f"Free tickets: {total_free_tickets}")
 
-print("\nExiting the ticket office program. Goodbye!")
+print("\nExiting the Ticket Office Program. Goodbye!")
