@@ -82,9 +82,9 @@ while True:
 if total_tickets == 0:
     print("\nNo tickets were sold.")
 else:
-    print(f"\nTotal tickets sold: {total_tickets}")
-    print(f"Total free tickets given: {total_free_tickets}")
+    print(f"\nTickets sold: {total_tickets}")
     print(f"Total revenue: {total_price:.2f} TRY")
-    print(f"Average ticket price: {total_price / total_tickets:.2f} TRY")
+    print(f"Average price: {total_price / total_tickets:.2f} TRY")
+    print(f"Free tickets: {total_free_tickets}")
 
 print("\nExiting the ticket office program. Goodbye!")
