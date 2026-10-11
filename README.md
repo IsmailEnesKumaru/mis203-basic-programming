@@ -30,5 +30,8 @@ Result: Hakan : 100.00 TRY (Senior)
 The order of the rules matter because pyhton checks the rules from top to bottom.If student rule comes before from child, customer can't benefit from child discount and pays %10 more ticket price.
 
 --------------------------------------------------------------------------Week 04--------------------------------------------------------------------------
+AI Tool Used: ChatGPT
+Prompt Used: I want to create a game where the computer randomly selects numbers from 1 to 5, and the user tries to guess them.
+What did you change ?: I added point system and round system.In first version game can continue forever if player guess correct so i prevented it.
 
 
