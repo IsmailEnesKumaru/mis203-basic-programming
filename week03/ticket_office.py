@@ -50,22 +50,22 @@ while True:
             price = wticket
 
     elif day == 'weekend':
-        if age <= 6:
+        if age < 6:
             price = 0
         elif age <= 12:
             price = eticket * 0.6
         elif student == 'yes' and age <= 25:
             price = eticket * 0.7
-        elif age > 65:
+        elif age >= 65:
             price = eticket * 0.5
         else:
             price = eticket
 
     if student == 'yes' and age <= 25 and age > 12:
         print(f"{name} : {price:.2f} TRY (Student)")
-    elif age <= 6:
+    elif age < 6:
         print(f"{name} : {price:.2f} TRY (Free)")
-    elif age > 65:
+    elif age >= 65:
         print(f"{name} : {price:.2f} TRY (Senior)")
     elif age <= 12:
         print(f"{name} : {price:.2f} TRY (Child)")
@@ -75,7 +75,7 @@ while True:
     total_price += price
     total_tickets += 1
 
-    if age <= 6:
+    if age < 6:
         total_free_tickets += 1
 
 

@@ -1,0 +1,70 @@
+import random
+import time
+
+# Starting points and rounds
+score = 100
+rounds = 0
+
+# Print the game introduction
+print("============================")
+print("   LUCKY NUMBER CASINO")
+print("============================")
+print("You have 100 points!")
+print("Guess a number between 1 and 5.")
+print("Correct guess = +20 points")
+print("Wrong guess = -10 points")
+print("You have 12 rounds.")
+print("Enter 0 to quit.")
+
+# The game continues while the player has points and rounds left
+while score > 0 and rounds < 12:
+    print("\nRound:", rounds + 1, "/ 12")
+    print("Your points:", score)
+
+    # Get the player's guess
+    guess = int(input("Your guess: "))
+
+    # Stop the game if the player enters 0
+    if guess == 0:
+        break
+
+    # Check if the guess is valid
+    if guess < 1 or guess > 5:
+        print("Please enter a number between 1 and 5.")
+        continue
+
+    # Count the round
+    rounds = rounds + 1
+
+    # Choose a random number
+    lucky_number = random.randint(1, 5)
+
+    print("The computer is choosing...")
+    time.sleep(2)
+
+    print("Lucky number:", lucky_number)
+
+    # Give points based on the guess
+    if guess == lucky_number:
+        score = score + 20
+        print("YOU WIN! +20 points!")
+    else:
+        score = score - 10
+        print("Wrong guess! -10 points!")
+
+# Show the final result
+print("\nGAME OVER!")
+print("Rounds played:", rounds)
+print("Your final score:", score)
+
+# Give a message based on the final score
+if score >= 150:
+    print("You are extremely lucky!")
+elif score >= 100:
+    print("Not bad! You are a good player!")
+elif score > 0:
+    print("Better luck next time!")
+else:
+    print("You lost all your points!")
+
+print("Thanks for playing!")
